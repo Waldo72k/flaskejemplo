@@ -19,3 +19,18 @@ una vez aqui te va a salir algo como
 Muy bien, ahora pa correr esto tienes que usar el comando
 
 > flask --app app run
+
+## BataDase
+
+Un detallote es que aveces se cierra automaticamente despues de meter el psswrd en el comandline, la cosa es que el puerto del MYSQL esta apagado, deberas inicializarlo pq sino obviamente no va a jalar
+
+Esto en windows es:
+
+Task Manager > Services > Open Services
+
+Una vez aqui busca el proceso "MYSQL${numerodelpuertoasignado}", en mi caso es MYSQL72
+Anyway, puedes dar click en x proceso y presionar "m" en el teclado para que te lleve directamente hasta las M y buscar ahi
+Ahora despues de seleccionarlo, a la derecha debe salir el Start service y ya estaria listo
+Ahora al abrir el Commandline no deberia cerrarse despues de ingresar el pswrd
+
+## Tareilla pa
