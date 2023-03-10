@@ -1,0 +1,24 @@
+{
+    "nombre": "VGDb",
+    "descripcion": "Pagina para consultas sobre videojuegos",
+    "url": ["Gaming", "Genres", "developers"],
+    "precio": "FREE",
+    "endpoints": [
+        {
+            "url": "/list/idiomas",
+            "limitedeconsultas": 6
+        },
+        {
+            "url": "/list/titulo",
+            "limitedeconsultas": 8
+        },
+        {
+            "url": "/list/franquicia",
+            "limitedeconsultas": 8
+        },
+        {
+            "url": "/list/precio",
+            "limitedeconsultas": 8
+        }
+    ]
+}
