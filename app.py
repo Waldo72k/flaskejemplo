@@ -2,8 +2,9 @@
 #source virtual/bin/activate
 #flask --app app run
 
-from flask import Flask
+from flask import Flask, jsonify
 import mysql.connector
+import json
 
 conexion = mysql.connector.connect(
 
@@ -25,9 +26,15 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return "<h1><center>HOLA ITE Ensenada</center></h1><marquee>% s</marquee>"%consulta
-
+##Asi se declara un pinchi endpoint, en este caso es el /bye
 @app.route("/bye")
 def adios():
     return "bye bye"
+
+@app.route("/about")
+def about():
+    with open("robots.json", "r") as f:
+        index = json.load(f)
+    return jsonify(index)
 
 #flask --app app run --port=80 <-asi se arranca el api, desde la virtualizacion
