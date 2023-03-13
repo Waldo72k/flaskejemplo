@@ -31,6 +31,10 @@ def main():
 def adios():
     return "bye bye"
 
+@app.route("/sql/test")
+def testConsulta():
+    return "<h1><center>HOLA ITE Ensenada</center></h1><marquee>% s</marquee>"%consulta
+
 @app.route("/about")
 def about():
     with open("robots.json", "r") as f:
