@@ -17,7 +17,7 @@ print(conexion)
 
 miCursor = conexion.cursor()
 
-miCursor.execute("SELECT * FROM videojuegos WHERE ID = 2")
+miCursor.execute("SELECT * FROM videojuegos WHERE ID = 1")
 
 consulta = miCursor.fetchall()
 
@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "<h1><center>HOLA ITE Ensenada</center></h1><marquee>% s</marquee>"%consulta
+    return "<h1><center>HOLA ITE Ensenada</center></h1>"
 ##Asi se declara un pinchi endpoint, en este caso es el /bye
 @app.route("/bye")
 def adios():
