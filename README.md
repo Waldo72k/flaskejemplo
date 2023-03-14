@@ -33,4 +33,6 @@ Anyway, puedes dar click en x proceso y presionar "m" en el teclado para que te 
 Ahora despues de seleccionarlo, a la derecha debe salir el Start service y ya estaria listo
 Ahora al abrir el Commandline no deberia cerrarse despues de ingresar el pswrd
 
+las imagenes se guardan en BASE64
+
 ## Tareilla pa
